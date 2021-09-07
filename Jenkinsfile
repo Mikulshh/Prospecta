@@ -7,5 +7,14 @@ pipeline {
                 echo 'Hello World from tarendra'
             }
         }
+        stage('bash script'){
+            steps {
+                sh(script:
+               '''#!/bin/bash
+               var = 123456
+               echo $var
+               ''')
+            }
+        }
     }
 }
