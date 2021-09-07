@@ -11,8 +11,7 @@ pipeline {
             steps {
                 sh(script:
                '''#!/bin/bash
-               var = 123456
-               echo $var
+               echo "hi again"
                ''')
             }
         }
